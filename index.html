@@ -1,38 +1,343 @@
+<!-- Save as index.html and upload to nitinlohan.github.io repo -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Nitin Lohan | Climate Scientist</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nitin Lohan | Research Portfolio</title>
+<meta name="description" content="Nitin Lohan - PhD Scholar | Atmospheric Science | Applied Mathematics | AI Researcher">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#0a0a0a;
+color:white;
+line-height:1.6;
+}
+
+header{
+position:fixed;
+width:100%;
+top:0;
+left:0;
+background:rgba(0,0,0,0.7);
+backdrop-filter:blur(10px);
+z-index:1000;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+header h2{
+color:#d4af37;
+font-size:24px;
+}
+
+nav a{
+color:white;
+margin-left:25px;
+text-decoration:none;
+font-weight:500;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#d4af37;
+}
+
+section{
+padding:100px 8%;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:50px;
+flex-wrap:wrap;
+}
+
+.hero-text{
+flex:1;
+min-width:300px;
+}
+
+.hero-text h1{
+font-size:55px;
+margin-bottom:10px;
+}
+
+.hero-text h1 span{
+color:#d4af37;
+}
+
+.hero-text h3{
+font-weight:400;
+margin-bottom:20px;
+color:#ccc;
+}
+
+.hero-text p{
+max-width:600px;
+color:#bbb;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 28px;
+background:#d4af37;
+color:black;
+font-weight:600;
+border-radius:30px;
+text-decoration:none;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:translateY(-4px);
+}
+
+.hero-img{
+flex:1;
+text-align:center;
+min-width:300px;
+}
+
+.hero-img img{
+width:350px;
+border-radius:25px;
+box-shadow:0 0 30px rgba(212,175,55,0.3);
+}
+
+.title{
+font-size:38px;
+margin-bottom:40px;
+text-align:center;
+color:#d4af37;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:#111;
+padding:25px;
+border-radius:18px;
+border:1px solid #222;
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+border-color:#d4af37;
+}
+
+.card h3{
+margin-bottom:12px;
+color:#d4af37;
+}
+
+.skills span{
+display:inline-block;
+padding:10px 18px;
+background:#111;
+margin:8px;
+border-radius:30px;
+border:1px solid #222;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact a{
+color:#d4af37;
+text-decoration:none;
+}
+
+footer{
+text-align:center;
+padding:30px;
+color:#777;
+border-top:1px solid #111;
+}
+
+@media(max-width:900px){
+.hero{
+flex-direction:column-reverse;
+text-align:center;
+}
+.hero-text h1{
+font-size:42px;
+}
+.hero-img img{
+width:280px;
+}
+nav{
+display:none;
+}
+}
+</style>
 </head>
-<body style="font-family: Arial; max-width: 900px; margin: auto; padding: 20px;">
 
-<h1>Nitin Lohan</h1>
-<p><b>PhD Scholar (Applied Mathematics)</b></p>
-<p>Climate Science | Extreme Rainfall | Cloudburst Events</p>
+<body>
 
-<hr>
+<header>
+<h2>Nitin Lohan</h2>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#research">Research</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
 
-<h2>About Me</h2>
+<section class="hero" id="home">
+
+<div class="hero-text">
+<h1>Hello, I'm <span>Nitin Lohan</span></h1>
+<h3>PhD Scholar | Atmospheric Science | Applied Mathematics | AI Researcher</h3>
+
 <p>
-I am a PhD researcher working at the intersection of applied mathematics and atmospheric science,
-with a focus on extreme rainfall, cloudburst events, and numerical weather modeling over India.
+Focused on extreme weather events, cloudburst dynamics, monsoon depressions,
+marine heatwaves, climate variability and machine learning applications in meteorology.
 </p>
 
-<h2>Research Interests</h2>
-<ul>
-  <li>Cloudburst & Extreme Rainfall Events</li>
-  <li>WRF Modeling & Sensitivity Experiments</li>
-  <li>Monsoon Depressions</li>
-  <li>ERA5 & IMDAA Reanalysis</li>
-  <li>AI–ML for Climate Data</li>
-</ul>
+<a href="#contact" class="btn">Contact Me</a>
+</div>
 
-<h2>Affiliation</h2>
-<p>Indian Meteorological Department (IMD)</p>
+<div class="hero-img">
+<img src="nitin-photo.png" alt="Nitin Lohan">
+</div>
 
-<h2>Contact</h2>
-<p>Email: nitinllohan@gmail.com</p>
+</section>
+
+<section id="about">
+<h2 class="title">About Me</h2>
+
+<div class="cards">
+<div class="card">
+<h3>Academic Profile</h3>
+<p>
+PhD Scholar in Applied Mathematics at Gautam Buddha University with strong research
+focus on weather forecasting, climate analysis and atmospheric modelling.
+</p>
+</div>
+
+<div class="card">
+<h3>Research Expertise</h3>
+<p>
+WRF Modelling, ERA5, IMDAA, GPM, Python, NetCDF processing,
+machine learning for monsoon systems and rainfall extremes.
+</p>
+</div>
+
+<div class="card">
+<h3>Vision</h3>
+<p>
+To create impactful scientific solutions for disaster forecasting,
+climate resilience and advanced meteorological intelligence.
+</p>
+</div>
+</div>
+</section>
+
+<section id="research">
+<h2 class="title">Research Areas</h2>
+
+<div class="cards">
+<div class="card">
+<h3>Cloudburst Events</h3>
+<p>High-resolution diagnostics over Himalayan region and NW India.</p>
+</div>
+
+<div class="card">
+<h3>Monsoon Depressions</h3>
+<p>Rainfall distribution, track analysis and climate connections.</p>
+</div>
+
+<div class="card">
+<h3>Marine Heatwaves</h3>
+<p>Arabian Sea & Bay of Bengal warming impacts on monsoon.</p>
+</div>
+
+<div class="card">
+<h3>AI Forecasting</h3>
+<p>Machine learning approaches for weather prediction systems.</p>
+</div>
+</div>
+</section>
+
+<section id="projects">
+<h2 class="title">Featured Projects</h2>
+
+<div class="cards">
+<div class="card">
+<h3>WRF Cloudburst Simulation</h3>
+<p>Physics sensitivity studies using multiple microphysics schemes.</p>
+</div>
+
+<div class="card">
+<h3>Rainfall Trends India</h3>
+<p>Long-term rainfall variability across Gujarat & Rajasthan.</p>
+</div>
+
+<div class="card">
+<h3>Cyclone & Depression Database</h3>
+<p>Machine learning analysis on 450+ monsoon depression records.</p>
+</div>
+</div>
+</section>
+
+<section id="skills">
+<h2 class="title">Skills & Tools</h2>
+
+<div class="skills" style="text-align:center;">
+<span>Python</span>
+<span>WRF</span>
+<span>Machine Learning</span>
+<span>NetCDF</span>
+<span>MATLAB</span>
+<span>ERA5</span>
+<span>IMDAA</span>
+<span>GIS</span>
+<span>Climate Analytics</span>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2 class="title">Contact</h2>
+
+<p>Email:</p>
+<p><a href="mailto:Lohannitin@gmail.com">Lohannitin@gmail.com</a></p>
+
+<br>
+
+<p>GitHub:</p>
+<p><a href="https://github.com/nitinlohan" target="_blank">github.com/nitinlohan</a></p>
+
+</section>
+
+<footer>
+© 2026 Nitin Lohan | Premium Research Portfolio
+</footer>
 
 </body>
 </html>
