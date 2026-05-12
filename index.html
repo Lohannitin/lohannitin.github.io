@@ -1,83 +1,120 @@
+<!-- =========================
+FILE 1 : index.html 
+========================= -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Dr. Nitin Lohan | Atmospheric Scientist | Researcher</title>
+
+<meta name="description" content="Official website of Dr. Nitin Lohan. Atmospheric Scientist, Applied Mathematics Researcher, publications, weather modelling, AI in meteorology.">
+
+<meta name="keywords" content="Nitin Lohan, Dr Nitin Lohan, meteorology, atmospheric scientist, WRF model, publications, India researcher">
+
+<meta name="author" content="Dr. Nitin Lohan">
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
-body{background:#0a0a0a;color:#fff}
-nav{display:flex;justify-content:space-between;align-items:center;padding:18px 7%;background:#111;position:sticky;top:0;z-index:10}
-.logo{font-size:24px;font-weight:bold;color:#d4af37}
-nav ul{display:flex;list-style:none;gap:25px;flex-wrap:wrap}
-nav a{text-decoration:none;color:#fff;font-weight:600} nav a:hover{color:#d4af37}
-.hero{min-height:78vh;display:flex;align-items:center;justify-content:space-between;padding:60px 7%;gap:40px;flex-wrap:wrap}
-.hero-text{max-width:640px}.hero-text h1{font-size:50px;margin-bottom:15px}.hero-text h3{color:#ccc;margin-bottom:20px}
-.hero-text p{color:#aaa;font-size:18px;margin-bottom:30px}
-.btn{display:inline-block;padding:14px 28px;background:#d4af37;color:#000;text-decoration:none;border-radius:30px;font-weight:bold}
-.profile{width:320px;border-radius:25px;box-shadow:0 0 30px rgba(212,175,55,.35)}
-.section{padding:80px 7%}.title{text-align:center;font-size:38px;color:#d4af37;margin-bottom:35px}
-.card{background:#111;padding:25px;border-radius:18px;border:1px solid #222;max-width:1100px;margin:0 auto}
-.card h3{color:#d4af37;margin:18px 0 10px}.card p,.card li{color:#ccc;line-height:1.75}
-.socials{display:flex;gap:14px;flex-wrap:wrap;margin-top:12px}
-.socials img{width:34px;height:34px;border-radius:50%;background:#fff;padding:5px}
-.plot-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:22px}
-.plot-grid figure{background:#111;border:1px solid #222;border-radius:14px;padding:12px}
-.plot-grid img{width:100%;border-radius:8px;display:block}
-.plot-grid figcaption{color:#aaa;font-size:14px;margin-top:8px}
-footer{padding:25px;text-align:center;color:#777;border-top:1px solid #111}
-@media(max-width:900px){.hero{flex-direction:column-reverse;text-align:center}.hero-text h1{font-size:38px}.profile{width:250px}}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif;}
+body{background:#0a0a0a;color:#fff;}
+nav{
+display:flex;justify-content:space-between;align-items:center;
+padding:18px 7%;background:#111;position:sticky;top:0;
+}
+.logo{font-size:24px;font-weight:bold;color:#d4af37;}
+nav ul{display:flex;list-style:none;gap:25px;}
+nav a{text-decoration:none;color:#fff;font-weight:600;}
+nav a:hover{color:#d4af37;}
+.hero{
+min-height:90vh;display:flex;align-items:center;justify-content:space-between;
+padding:60px 7%;gap:40px;flex-wrap:wrap;
+}
+.hero-text{max-width:600px;}
+.hero-text h1{font-size:55px;margin-bottom:15px;}
+.hero-text h3{color:#ccc;margin-bottom:20px;}
+.hero-text p{color:#aaa;font-size:18px;margin-bottom:30px;}
+.btn{
+display:inline-block;padding:14px 28px;background:#d4af37;
+color:#000;text-decoration:none;border-radius:30px;font-weight:bold;
+}
+.btn:hover{opacity:0.9;}
+.profile{
+width:340px;border-radius:25px;box-shadow:0 0 30px rgba(212,175,55,0.35);
+}
+.section{padding:80px 7%;}
+.title{text-align:center;font-size:40px;color:#d4af37;margin-bottom:45px;}
+.grid{
+display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+.card{
+background:#111;padding:25px;border-radius:18px;border:1px solid #222;
+}
+.card h3{color:#d4af37;margin-bottom:10px;}
+.card p{color:#ccc;line-height:1.7;}
+footer{
+padding:25px;text-align:center;color:#777;border-top:1px solid #111;
+}
+@media(max-width:900px){
+nav ul{flex-wrap:wrap;gap:12px;}
+.hero{flex-direction:column-reverse;text-align:center;}
+.hero-text h1{font-size:40px;}
+.profile{width:260px;}
+}
 </style>
 </head>
 <body>
+
 <nav>
 <div class="logo">Nitin Lohan</div>
 <ul>
 <li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
 <li><a href="publications.html">Publications</a></li>
+<li><a href="profiles.html">Profiles</a></li>
 <li><a href="cv.html">CV</a></li>
+<li><a href="contact.html">Contact</a></li>
 </ul>
 </nav>
+
 <section class="hero">
 <div class="hero-text">
 <h1>Dr. Nitin Lohan</h1>
 <h3>Assistant Professor | Atmospheric Scientist | Applied Mathematics Researcher</h3>
-<p>Extreme Weather Events • WRF Modeling • Climate Change • AI in Meteorology • Numerical Weather Prediction</p>
+<p>
+Extreme Weather Events • WRF Modeling • Climate Change • AI in Meteorology •
+Numerical Weather Prediction
+</p>
 <a href="publications.html" class="btn">View Publications</a>
 </div>
 <img src="nitin-photo.png" class="profile" alt="Nitin Lohan">
 </section>
-<section class="section">
-<h2 class="title">About • Research Focus • Academic Identities • Contact</h2>
-<div class="card">
-<h3>About</h3>
-<p>I am an atmospheric scientist working on monsoon dynamics, extreme rainfall, and numerical weather prediction over India using observations, reanalysis data, and high-resolution modelling.</p>
-<h3>Research Focus</h3>
-<ul>
-<li>Cloudburst and extreme precipitation diagnostics in complex terrain.</li>
-<li>Monsoon low-pressure systems and rainfall variability.</li>
-<li>Climate trend analysis and AI-enabled meteorological analytics.</li>
-</ul>
-<h3>Academic Identities</h3>
-<div class="socials">
-<a href="https://scholar.google.com" target="_blank"><img src="googlescholar.png" alt="Google Scholar"></a>
-<a href="https://orcid.org" target="_blank"><img src="orcid.png" alt="ORCID"></a>
-<a href="https://www.researchgate.net" target="_blank"><img src="researchgate.png" alt="ResearchGate"></a>
-<a href="https://www.scopus.com" target="_blank"><img src="scopus.png" alt="Scopus"></a>
-<a href="https://www.webofscience.com" target="_blank"><img src="wos.png" alt="Web of Science"></a>
-<a href="https://www.linkedin.com" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
-</div>
-<h3>Contact</h3>
-<p>Email: nitinlohan@email.com<br>Location: India</p>
 
-<h3>Latest Research Highlights (Graphical)</h3>
-<div class="plot-grid">
-<figure><div style="height:170px;background:linear-gradient(90deg,#7f1d1d 12%,#be123c 38%,#a3e635 64%,#166534 100%);border-radius:8px"></div><figcaption>JJAS Rainfall Trend (1951–2024): generalized trend band visualization.</figcaption></figure>
-<figure><div style="height:170px;display:grid;grid-template-columns:repeat(8,1fr);gap:6px;align-items:end"><span style="display:block;background:#1d4ed8;height:38%"></span><span style="display:block;background:#2563eb;height:42%"></span><span style="display:block;background:#0ea5e9;height:47%"></span><span style="display:block;background:#14b8a6;height:53%"></span><span style="display:block;background:#22c55e;height:61%"></span><span style="display:block;background:#84cc16;height:69%"></span><span style="display:block;background:#eab308;height:77%"></span><span style="display:block;background:#ef4444;height:84%"></span></div><figcaption>JJAS Daily Rainfall (1951–2025): intensity class representation.</figcaption></figure>
-<figure><div style="height:170px;border-radius:8px;background:repeating-linear-gradient(135deg,#111827,#111827 12px,#374151 12px,#374151 24px)"></div><figcaption>JAS 95th Percentile Daily Rainfall (1951–2025): extreme-event focus panel.</figcaption></figure>
+<section class="section">
+<h2 class="title">Research Focus</h2>
+<div class="grid">
+<div class="card">
+<h3>Cloudburst Events</h3>
+<p>Diagnostic and modelling studies over Himalayan and Northwest India.</p>
+</div>
+<div class="card">
+<h3>Monsoon Systems</h3>
+<p>Monsoon low pressure systems, depressions and extreme rainfall mechanisms.</p>
+</div>
+<div class="card">
+<h3>Climate Analytics</h3>
+<p>Rainfall trends, marine heatwaves and climate variability studies.</p>
+</div>
+<div class="card">
+<h3>AI & Big Data</h3>
+<p>Machine learning applications in atmospheric science and forecasting.</p>
 </div>
 </div>
 </section>
-<footer>© 2026 Dr. Nitin Lohan | Academic Portfolio</footer>
+
+<footer>
+© 2026 Dr. Nitin Lohan | Academic Portfolio
+</footer>
+
 </body>
 </html>
