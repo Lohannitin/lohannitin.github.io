@@ -23,7 +23,7 @@
 @page{
   size:A4;
   margin:15mm 17mm 16mm 17mm;
-  @bottom-left{content:"Dr. Nitin Lohan \2014  Curriculum Vitae (September 2026)";font-family:var(--sans);font-size:7.5pt;color:#7a828c;}
+  @bottom-left{content:"Dr. Nitin Lohan \2014  Curriculum Vitae";font-family:var(--sans);font-size:7.5pt;color:#7a828c;}
   @bottom-right{content:"Page " counter(page) " of " counter(pages);font-family:var(--sans);font-size:7.5pt;color:#7a828c;}
 }
 *{box-sizing:border-box;margin:0;padding:0;}
@@ -55,6 +55,9 @@ p.lead{text-align:justify;hyphens:auto;}
 .entry .where{grid-column:1 / -1;color:var(--muted);font-style:italic;}
 .entry .detail{grid-column:1 / -1;margin-top:.5mm;}
 .entry ul{grid-column:1 / -1;margin-top:.7mm;}
+.entry.flow{break-inside:auto;}
+.entry .what,.entry .when,.entry .where{break-after:avoid;}
+ul li{break-inside:avoid;}
 
 ul{padding-left:4.2mm;}
 ul li{margin-bottom:.6mm;}
@@ -95,10 +98,10 @@ ol.pubs li::before{content:"[" counter(pub) "]";position:absolute;left:0;top:0;f
 <header>
   <div>
     <div class="name">Dr. Nitin Lohan</div>
-    <div class="role">Assistant Professor (Mathematics) &nbsp;·&nbsp; Atmospheric Scientist</div>
-    <div class="affil">Department of Applied Sciences and Humanities, G.L. Bajaj Institute of Technology and Management,<br>Greater Noida, Uttar Pradesh 201306, India</div>
+    <div class="role">National Post-Doctoral Fellow (NPDF) &nbsp;·&nbsp; Atmospheric Scientist</div>
+    <div class="affil">Department of Earth and Atmospheric Sciences, National Institute of Technology Rourkela,<br>Rourkela, Odisha 769008, India</div>
     <div class="contact">
-      <a href="mailto:nitin.3723@glbitm.ac.in">nitin.3723@glbitm.ac.in</a><span class="sep">|</span><a href="mailto:Lohannitin@gmail.com">Lohannitin@gmail.com</a><span class="sep">|</span>+91-9692070005<span class="sep">|</span><a href="https://lohannitin.github.io">lohannitin.github.io</a><br>
+      <a href="mailto:Lohannitin@gmail.com">Lohannitin@gmail.com</a><span class="sep">|</span>+91-9692070005<span class="sep">|</span><a href="https://lohannitin.github.io">lohannitin.github.io</a><br>
       <a class="i" href="https://orcid.org/0000-0003-4967-3313">ORCID 0000-0003-4967-3313</a><span class="sep">|</span><a class="i" href="https://scholar.google.com/citations?user=yQdDY5QAAAAJ&amp;hl=en">Google Scholar</a><span class="sep">|</span><a class="i" href="https://www.scopus.com/authid/detail.uri?authorId=58930614500">Scopus</a><span class="sep">|</span><a class="i" href="https://www.webofscience.com/wos/author/record/NVM-4149-2025">Web of Science</a><span class="sep">|</span><a class="i" href="https://www.researchgate.net/profile/Nitin-Lohan">ResearchGate</a><span class="sep">|</span><a class="i" href="https://www.linkedin.com/in/nitinlohan/">LinkedIn</a>
     </div>
   </div>
@@ -107,10 +110,10 @@ ol.pubs li::before{content:"[" counter(pub) "]";position:absolute;left:0;top:0;f
 
 <section>
   <h2>Research Profile</h2>
-  <p class="lead">Applied mathematician and atmospheric scientist working on the diagnosis and numerical simulation of extreme precipitation over the Indian region: Himalayan cloudbursts, monsoon low-pressure systems and tropical cyclones. The work combines WRF/WRFDA modeling, 3DVAR data assimilation and reanalysis and satellite datasets (ERA5, IMDAA, IMD, GPM, INSAT), carried out in collaboration with scientists at IMD, NCMRWF and IITM.</p>
+  <p class="lead">Applied mathematician and atmospheric scientist, currently a National Post-Doctoral Fellow at NIT Rourkela working on numerical and machine-learning forecasting over the Himalayan region. Research covers the diagnosis, simulation and statistics of extreme weather over India: Himalayan cloudbursts, monsoon low-pressure systems, tropical cyclones, heatwaves and the changing spatial structure of monsoon rainfall extremes. The work combines WRF/WRFDA modeling, 3DVAR data assimilation, extreme-value statistics and reanalysis and satellite datasets (ERA5, IMDAA, IMD, GPM, INSAT), in collaboration with scientists at IMD, NCMRWF and IITM.</p>
   <div class="stats">
-    <div class="stat"><b>7</b><span>Peer-reviewed journal articles</span></div>
-    <div class="stat"><b>3</b><span>Conference papers &amp; book chapters</span></div>
+    <div class="stat"><b>8</b><span>Peer-reviewed journal articles</span></div>
+    <div class="stat"><b>4</b><span>Conference papers &amp; book chapters</span></div>
     <div class="stat"><b>3</b><span>Conference presentations</span></div>
     <div class="stat"><b>NET ×2 · GATE</b><span>National qualifications</span></div>
   </div>
@@ -120,14 +123,14 @@ ol.pubs li::before{content:"[" counter(pub) "]";position:absolute;left:0;top:0;f
   <h2>Research Interests</h2>
   <div class="cols">
     <ul>
-      <li>Extreme and high-impact weather events and their climatology</li>
-      <li>Cloudbursts, monsoon low-pressure systems and tropical cyclones</li>
+      <li>Numerical and machine-learning forecasting over the Himalayan region</li>
+      <li>Extreme weather: cloudbursts, monsoon low-pressure systems, tropical cyclones and heatwaves</li>
       <li>Numerical weather prediction and data assimilation (WRF, WRFDA, 3DVAR)</li>
     </ul>
     <ul>
-      <li>Urbanization, climate change and associated socio-economic impacts</li>
-      <li>Big-data analysis of reanalysis and satellite datasets</li>
-      <li>Statistical and stochastic modeling, remote sensing, GIS and ML/DL in atmospheric science</li>
+      <li>Extreme-value statistics and spatial dependence of monsoon rainfall extremes</li>
+      <li>Climate change, urbanization and associated socio-economic impacts</li>
+      <li>Big-data analysis of reanalysis and satellite datasets; remote sensing and GIS</li>
     </ul>
   </div>
 </section>
@@ -152,23 +155,30 @@ ol.pubs li::before{content:"[" counter(pub) "]";position:absolute;left:0;top:0;f
 
 <section>
   <h2>Academic &amp; Professional Experience</h2>
-  <div class="entry">
-    <div class="what">Assistant Professor (Mathematics)</div><div class="when">Jul 2025 – Present</div>
+  <div class="entry flow">
+    <div class="what">National Post-Doctoral Fellow (NPDF)</div><div class="when">Oct 2026 – Present</div>
+    <div class="where">Department of Earth and Atmospheric Sciences, National Institute of Technology Rourkela, Odisha</div>
+    <ul>
+      <li>Research on numerical and machine-learning forecasting over the Himalayan region.</li>
+    </ul>
+  </div>
+  <div class="entry flow">
+    <div class="what">Assistant Professor (Mathematics)</div><div class="when">Jul 2025 – Sep 2026</div>
     <div class="where">G.L. Bajaj Institute of Technology and Management, Greater Noida</div>
     <ul>
-      <li>Teach undergraduate engineering mathematics to 100+ students; develop course material, assessments and problem sets.</li>
-      <li>Mentor students in applied mathematics, numerical methods and scientific computing with Python.</li>
-      <li>Continue research on atmospheric modeling and extreme-precipitation diagnostics alongside teaching.</li>
+      <li>Taught undergraduate engineering mathematics to 100+ students; developed course material, assessments and problem sets.</li>
+      <li>Mentored students in applied mathematics, numerical methods and scientific computing with Python.</li>
+      <li>Continued research on atmospheric modeling, extreme-precipitation diagnostics and rainfall extremes alongside teaching.</li>
     </ul>
   </div>
-  <div class="entry">
+  <div class="entry flow">
     <div class="what">AI Trainer / Evaluator &amp; STEM Benchmark Developer (Remote)</div><div class="when">Sep 2025 – Present</div>
-    <div class="where">Turing &amp; Mercor</div>
+    <div class="where">Mercor · Turing · micro1 · Handshake AI</div>
     <ul>
-      <li>Design high-difficulty mathematics and numerical-methods benchmark tasks and reference solutions for evaluating large language models; grade model outputs for mathematical correctness and reasoning quality.</li>
+      <li>Design high-difficulty mathematics, numerical-methods and inverse-problem tasks, SciCode-style scientific-coding benchmarks and RLHF preference data for training and evaluating large language models.</li>
     </ul>
   </div>
-  <div class="entry">
+  <div class="entry flow">
     <div class="what">Doctoral Researcher (Applied Mathematics)</div><div class="when">Jul 2020 – Jan 2026</div>
     <div class="where">Gautam Buddha University, Greater Noida</div>
     <ul>
@@ -183,6 +193,7 @@ ol.pubs li::before{content:"[" counter(pub) "]";position:absolute;left:0;top:0;f
   <h2>Publications</h2>
   <h3>Journal Articles</h3>
   <ol class="pubs">
+    <li><span class="me">Lohan, N.</span>, Kumar, S., Ben Hasher, F. F., &amp; Zhran, M. (2026). Reorganization of the spatial dependence structure of Indian summer monsoon rainfall extremes, 1951–2025. <span class="venue">Atmosphere</span>, 17(9), 892. <a class="doi" href="https://doi.org/10.3390/atmos17090892">doi:10.3390/atmos17090892</a></li>
     <li><span class="me">Lohan, N.</span>, Pattanaik, D. R., Kumar, S., &amp; Giri, R. K. (2025). Diagnostic study of monsoon-linked rainfall events: Unraveling the role of monsoon low pressure systems across the Indian subcontinent. <span class="venue">Earth Systems and Environment</span>, 1–14. <a class="doi" href="https://doi.org/10.1007/s41748-025-00706-y">doi:10.1007/s41748-025-00706-y</a></li>
     <li><span class="me">Lohan, N.</span>, Routray, A., Kumar, R., Mahala, B. K., &amp; Kumar, S. (2025). Validation and diagnostic study of cloudburst events over the Himalayan region using IMDAA and ERA5. <span class="venue">Geomatics, Natural Hazards and Risk</span>, 16(1), 2446589. <a class="doi" href="https://doi.org/10.1080/19475705.2024.2446589">doi:10.1080/19475705.2024.2446589</a></li>
     <li><span class="me">Lohan, N.</span>, Kumar, S., Singh, V., Gupta, R. P., &amp; Tiwari, G. (2025). Analyzing an extreme rainfall event in Himachal Pradesh, India, to contribute to sustainable development. <span class="venue">Sustainability</span>, 17(5), 2115. <a class="doi" href="https://doi.org/10.3390/su17052115">doi:10.3390/su17052115</a></li>
@@ -192,16 +203,12 @@ ol.pubs li::before{content:"[" counter(pub) "]";position:absolute;left:0;top:0;f
     <li><span class="me">Lohan, N.</span>, Kumar, S., Mishra, P., Kumar, S., &amp; Giri, R. K. (2023). A study of the long-term trend of methane emission over the Indian region during 1970–2020. <span class="venue">Vayu Mandal</span>, 49(2), 26–33. Indian Meteorological Society.</li>
   </ol>
 
-  <h3>Under Review</h3>
-  <ol class="pubs" style="--start:7">
-    <li><span class="me">Lohan, N.</span>, Kumar, S., Singh, V., &amp; Tiwari, G. Role of microphysics and convective parameterization in simulating extreme precipitation events over the Himalayas: A multi-event WRF analysis. Submitted to <span class="venue">Atmospheric Research</span>.</li>
-  </ol>
-
   <h3>Conference Proceedings &amp; Book Chapters</h3>
   <ol class="pubs" style="--start:8">
-    <li><span class="me">Lohan, N.</span>, Tiwari, G., Kumar, S., &amp; Routray, A. (2023). On the analysis of a very severe cyclonic storm Nilofar over the Arabian Sea: A numerical weather prediction model study. In <span class="venue">International Conference on Applied and Industrial Mathematics (ICAIM 2023)</span>, pp. 157–169. Springer Nature Singapore. <a class="doi" href="https://doi.org/10.1007/978-981-96-3460-6_10">doi:10.1007/978-981-96-3460-6_10</a></li>
+    <li>Kumari, N., Singh, N., Panda, B., Singh, V., Kumar, N., &amp; <span class="me">Lohan, N.</span> (2026). Simulation of heatwave event using WRF model across Uttar Pradesh, India. In <span class="venue">2026 2nd International Conference on Cognitive Computing in Engineering, Communications, Sciences and Biomedical Health Informatics (IC3ECSBHI)</span>. IEEE. <a class="doi" href="https://doi.org/10.1109/IC3ECSBHI67834.2026.11468976">doi:10.1109/IC3ECSBHI67834.2026.11468976</a></li>
     <li>Panda, J., Paul, D., Sarkar, A., Mukherjee, A., Bhasi, I., Tom, G., <span class="me">Lohan, N.</span>, &amp; Kumar, S. (2025). Severe storms in changing climate scenario with a distinctive emphasis on South Asia and India. In <span class="venue">Severe Storms: Anatomy, Early Warning Systems and Aftermath in Changing Climate Scenarios</span>, pp. 563–606. Springer Nature Singapore. <span class="tag soft">Book chapter</span> <a class="doi" href="https://doi.org/10.1007/978-981-97-7075-5_22">doi:10.1007/978-981-97-7075-5_22</a></li>
     <li>Kumar, N., Kumar, S., Panda, B., Routray, A., Kumari, N., &amp; <span class="me">Lohan, N.</span> (2025). Diagnostic study of thunderstorms over Uttar Pradesh, India. In <span class="venue">2025 International Conference on Cognitive Computing in Engineering, Communications, Sciences and Biomedical Health Informatics (IC3ECSBHI)</span>, pp. 1276–1279. IEEE. <a class="doi" href="https://doi.org/10.1109/IC3ECSBHI63591.2025.10990776">doi:10.1109/IC3ECSBHI63591.2025.10990776</a></li>
+    <li><span class="me">Lohan, N.</span>, Tiwari, G., Kumar, S., &amp; Routray, A. (2023). On the analysis of a very severe cyclonic storm Nilofar over the Arabian Sea: A numerical weather prediction model study. In <span class="venue">International Conference on Applied and Industrial Mathematics (ICAIM 2023)</span>, pp. 157–169. Springer Nature Singapore. <a class="doi" href="https://doi.org/10.1007/978-981-96-3460-6_10">doi:10.1007/978-981-96-3460-6_10</a></li>
   </ol>
 </section>
 
@@ -259,6 +266,7 @@ ol.pubs li::before{content:"[" counter(pub) "]";position:absolute;left:0;top:0;f
   <h2>Technical Skills</h2>
   <dl class="kv">
     <dt>Programming</dt><dd>Python (expert): NumPy, SciPy, pandas, xarray, Matplotlib, Cartopy, wrf-python; machine learning (intermediate)</dd>
+    <dt>Statistics</dt><dd>Extreme-value statistics (extremal coefficient, F-madogram, Brown–Resnick dependence models); trend and change-point analysis (Pettitt test); error metrics (MAE, RMSE, correlation) for model verification</dd>
     <dt>Modeling &amp; HPC</dt><dd>WRF-ARW, WRFDA (3DVAR), WRF installation; HPC job handling with SLURM/PBS; parallel computing; automation and scheduling</dd>
     <dt>Data &amp; Visualization</dt><dd>NetCDF/HDF data, CDO, GrADS, NCView, Panoply, HDFView, ArcGIS; ERA5, IMDAA, IMD, GPM and INSAT datasets</dd>
     <dt>Writing &amp; Tools</dt><dd>LaTeX, Git/GitHub, JupyterLab, Linux</dd>

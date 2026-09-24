@@ -34,7 +34,7 @@ header{padding-bottom:3.2mm;border-bottom:1.2pt solid var(--accent);}
 .contact .sep{color:var(--rule);padding:0 1.4mm;}
 .contact a{color:var(--ink);}
 
-section{margin-top:3.9mm;}
+section{margin-top:3.5mm;}
 h2{font-size:8.6pt;font-weight:700;letter-spacing:0.6pt;text-transform:uppercase;color:var(--accent);
    padding-bottom:.9mm;border-bottom:.6pt solid var(--rule);margin-bottom:2mm;break-after:avoid;}
 p.summary{text-align:justify;hyphens:auto;}
@@ -43,7 +43,9 @@ p.summary{text-align:justify;hyphens:auto;}
 .skills dt{font-weight:600;color:var(--ink);}
 .skills dd{color:#2b3036;}
 
-.job{margin-bottom:2.8mm;}
+.job{margin-bottom:2.4mm;}
+.job.keep{break-inside:avoid;}
+.job-head{break-inside:avoid;}
 .job-head,.job-org{break-after:avoid;}
 li{break-inside:avoid;}
 .job-head{display:flex;justify-content:space-between;align-items:baseline;gap:4mm;}
@@ -75,33 +77,33 @@ ul li::marker{color:var(--accent);}
 
 <header>
   <div class="name">Nitin Lohan <small>Ph.D.</small></div>
-  <div class="headline">AI Trainer &amp; STEM Benchmark Developer &nbsp;|&nbsp; Mathematics LLM Evaluator &nbsp;|&nbsp; Scientific Data Analyst</div>
+  <div class="headline">AI Trainer &amp; LLM Evaluator &nbsp;|&nbsp; RLHF &amp; SciCode Benchmark Developer &nbsp;|&nbsp; Applied Mathematics Ph.D.</div>
   <div class="contact">
-    Greater Noida (Delhi NCR), India<span class="sep">|</span>+91-9692070005<span class="sep">|</span><a href="mailto:Lohannitin@gmail.com">Lohannitin@gmail.com</a><span class="sep">|</span><a href="https://lohannitin.github.io">lohannitin.github.io</a><br>
-    <a href="https://www.linkedin.com/in/nitinlohan/">linkedin.com/in/nitinlohan</a><span class="sep">|</span><a href="https://github.com/Lohannitin">github.com/Lohannitin</a><span class="sep">|</span><a href="https://scholar.google.com/citations?user=yQdDY5QAAAAJ&amp;hl=en">Google Scholar</a><span class="sep">|</span><a href="https://orcid.org/0000-0003-4967-3313">ORCID 0000-0003-4967-3313</a>
+    Rourkela, Odisha, India (open to remote)<span class="sep">|</span>+91-9692070005<span class="sep">|</span><a href="mailto:Lohannitin@gmail.com">Lohannitin@gmail.com</a><span class="sep">|</span><a href="https://lohannitin.github.io">lohannitin.github.io</a><br>
+    <a href="https://github.com/Lohannitin">github.com/Lohannitin</a><span class="sep">|</span><a href="https://www.linkedin.com/in/nitinlohan/">linkedin.com/in/nitinlohan</a><span class="sep">|</span><a href="https://scholar.google.com/citations?user=yQdDY5QAAAAJ&amp;hl=en">Google Scholar</a><span class="sep">|</span><a href="https://orcid.org/0000-0003-4967-3313">ORCID 0000-0003-4967-3313</a>
   </div>
 </header>
 
 <section>
   <h2>Professional Summary</h2>
-  <p class="summary">Applied Mathematics Ph.D. and AI Trainer / Evaluator specializing in LLM evaluation, model-output grading, RLHF / human-feedback data, STEM benchmark development and model-failure analysis. Experienced in designing high-difficulty mathematics and numerical-methods tasks, authoring rigorous reference solutions, validating AI outputs for correctness, and revising tasks across reviewer cycles to satisfy exact-match scoring. Backed by a strong scientific-computing foundation (expert Python, machine learning, numerical weather modeling with WRF/WRFDA, 3DVAR data assimilation and HPC workflows) and peer-reviewed technical writing across 7 journal articles.</p>
+  <p class="summary">Applied Mathematics Ph.D. and AI Trainer with hands-on experience at Mercor, Turing, micro1 and Handshake AI, building and evaluating training and benchmark data for large language models. Specializes in RLHF and reward-model preference data, SciCode-style scientific-coding benchmarks, inverse-problem and numerical-methods tasks, rubric design and model-failure analysis. Delivers reproducible Python code, test cases and reference solutions through GitHub-based workflows. Deep domain expertise in numerical PDEs, extreme-value statistics, weather modeling (WRF/WRFDA) and HPC, with 8 peer-reviewed journal articles; currently a National Post-Doctoral Fellow at NIT Rourkela working on numerical and machine-learning forecasting.</p>
 </section>
 
 <section>
   <h2>Core Skills</h2>
   <dl class="skills">
-    <dt>AI Training &amp; LLM Evaluation</dt>
-    <dd>LLM evaluation and response grading; RLHF / human-feedback data; reward-model preference data; prompt and task design; red-teaming and model-breaking reasoning tasks; rubric and annotation-guideline design; hallucination, error and edge-case detection; reference-solution writing; inter-rater consistency; citation and numerical verification; dataset quality assurance</dd>
+    <dt>RLHF &amp; LLM Evaluation</dt>
+    <dd>RLHF / human-feedback data; reward-model preference ranking; LLM response grading; rubric and annotation-guideline design; red-teaming and model-breaking reasoning tasks; hallucination, error and edge-case detection; reference-solution writing; inter-rater consistency; citation and numerical verification; dataset quality assurance</dd>
     <dt>Benchmark &amp; Task Design</dt>
-    <dd>STEM benchmark development; SciCode-style multi-step tasks; exact-match and rubric-based scoring; discriminating test-case engineering; operator and scoring-logic redesign; evaluation-harness debugging; reproducibility validation</dd>
-    <dt>Mathematics</dt>
-    <dd>Numerical linear algebra; partial differential equations; numerical analysis and interpolation; probability, statistics and extreme-value theory; optimization; finite-difference and finite-element methods</dd>
-    <dt>Programming &amp; Data</dt>
-    <dd>Python (expert): NumPy, SciPy, pandas, xarray, Matplotlib, Cartopy, wrf-python; CDO; machine learning; reproducible, research-grade scientific code</dd>
+    <dd>SciCode-style multi-step scientific-coding benchmarks; STEM benchmark development; inverse-problem tasks; exact-match and rubric-based scoring; discriminating test-case engineering; operator and scoring-logic redesign; evaluation-harness debugging; reproducibility validation</dd>
+    <dt>Mathematics &amp; Statistics</dt>
+    <dd>Inverse problems; numerical linear algebra; partial differential equations; numerical analysis and interpolation (incl. WENO, monotone Hermite); finite-difference and finite-element methods; optimization; probability, statistics and extreme-value theory; change-point tests</dd>
+    <dt>Programming &amp; ML</dt>
+    <dd>Python (expert): NumPy, SciPy, pandas, xarray, Matplotlib, Cartopy, wrf-python; machine learning for forecasting; Jupyter notebooks; reproducible, research-grade scientific code</dd>
     <dt>Scientific Computing</dt>
-    <dd>WRF / WRFDA; 3DVAR data assimilation; HPC (SLURM/PBS); parallel computing; model automation and scheduling; ERA5, IMDAA, IMD, GPM and INSAT datasets</dd>
-    <dt>Tools</dt>
-    <dd>LaTeX; Git/GitHub; JupyterLab; VS Code; Cursor; Claude Code; Linux; Windows</dd>
+    <dd>WRF / WRFDA; 3DVAR data assimilation; HPC (SLURM/PBS); parallel computing; automation and scheduling; CDO; ERA5, IMDAA, IMD, GPM and INSAT datasets</dd>
+    <dt>Engineering Tools</dt>
+    <dd>Git/GitHub (repository-based task delivery); LaTeX; JupyterLab; VS Code; Cursor; Claude Code; Linux; Windows</dd>
   </dl>
 </section>
 
@@ -110,54 +112,64 @@ ul li::marker{color:var(--accent);}
 
   <div class="job">
     <div class="job-head"><div class="job-title">AI Trainer / Evaluator &amp; STEM Benchmark Developer</div><div class="job-dates">Sep 2025 – Present</div></div>
-    <div class="job-org">Turing &amp; Mercor · Remote</div>
+    <div class="job-org">Mercor · Turing · micro1 · Handshake AI &nbsp;(Remote, contract)</div>
     <ul>
-      <li>Designed 100+ high-difficulty mathematics and numerical-methods benchmark tasks to evaluate and improve advanced AI/LLM reasoning.</li>
+      <li>Produced RLHF and reward-model preference data: ranked, graded and critiqued LLM responses in mathematics and scientific computing against detailed rubrics.</li>
+      <li>Designed 100+ high-difficulty mathematics and numerical-methods benchmark tasks to evaluate and improve advanced LLM reasoning.</li>
+      <li>Built SciCode-style multi-step Python benchmarks delivered through GitHub repositories, with reference implementations, discriminating test cases and documentation, including WENO-type reconstruction tasks tied to numerical weather prediction.</li>
+      <li>Created inverse-problem tasks (recovering unknown parameters or sources from observed data) that test model reasoning on ill-posedness, stability and regularization.</li>
       <li>Authored rigorous, step-by-step reference solutions with explicit assumptions, derivations, unit consistency and verified final answers.</li>
-      <li>Evaluated and graded AI model outputs across multiple model families for mathematical correctness, reasoning depth, hallucinations, ambiguity, formatting and answer consistency.</li>
-      <li>Revised benchmark tasks through 3–4 reviewer cycles per task, redesigning operators and scoring logic to satisfy exact-match evaluation.</li>
-      <li>Established a strict pre-submission verification discipline: numerical outputs computed and citations confirmed against source PDFs before delivery, reducing reviewer-rejection errors.</li>
-      <li>Built WENO-type reconstruction and SciCode-style multi-step Python benchmarks tied to numerical weather-prediction methods.</li>
+      <li>Evaluated model outputs across multiple model families for mathematical correctness, reasoning depth, hallucinations, ambiguity, formatting and answer consistency.</li>
+      <li>Revised tasks through 3–4 reviewer cycles, redesigning operators and scoring logic for exact-match evaluation; verified every numerical output and citation against source PDFs before delivery, reducing reviewer rejections.</li>
     </ul>
   </div>
 
-  <div class="job">
-    <div class="job-head"><div class="job-title">Assistant Professor (Mathematics)</div><div class="job-dates">Jul 2025 – Present</div></div>
+  <div class="job keep">
+    <div class="job-head"><div class="job-title">National Post-Doctoral Fellow (NPDF)</div><div class="job-dates">Oct 2026 – Present</div></div>
+    <div class="job-org">Department of Earth and Atmospheric Sciences, NIT Rourkela · Odisha</div>
+    <ul>
+      <li>Research on numerical (NWP) and machine-learning forecasting over the Himalayan region.</li>
+    </ul>
+  </div>
+
+  <div class="job keep">
+    <div class="job-head"><div class="job-title">Assistant Professor (Mathematics)</div><div class="job-dates">Jul 2025 – Sep 2026</div></div>
     <div class="job-org">G.L. Bajaj Institute of Technology and Management · Greater Noida</div>
     <ul>
-      <li>Teach undergraduate engineering mathematics to 100+ students; develop course material, assessments and problem sets.</li>
-      <li>Mentor students in applied mathematics, numerical methods and scientific computing with Python.</li>
+      <li>Taught engineering mathematics to 100+ undergraduates; developed course material, assessments and problem sets.</li>
+      <li>Mentored students in applied mathematics, numerical methods and scientific computing with Python.</li>
     </ul>
   </div>
 
-  <div class="job">
+  <div class="job keep">
     <div class="job-head"><div class="job-title">Doctoral Researcher (Applied Mathematics)</div><div class="job-dates">Jul 2020 – Jan 2026</div></div>
     <div class="job-org">Gautam Buddha University · Greater Noida</div>
     <ul>
-      <li>Conducted diagnostic and numerical-modeling studies of heavy-precipitation and cloudburst events over the Indian region.</li>
-      <li>Configured and ran WRF/WRFDA simulations on HPC clusters; applied 3DVAR data assimilation to high-impact case studies.</li>
-      <li>Analyzed ERA5, IMDAA, IMD, GPM and INSAT datasets for extreme-rainfall and monsoon-system diagnostics.</li>
-      <li>Published 7 peer-reviewed journal articles and 3 conference papers / book chapters; delivered 3 national and international conference presentations.</li>
+      <li>Diagnostic and numerical-modeling studies of heavy-precipitation and cloudburst events over India using ERA5, IMDAA, IMD, GPM and INSAT data.</li>
+      <li>Ran WRF/WRFDA simulations on HPC clusters with 3DVAR data assimilation for high-impact case studies.</li>
     </ul>
   </div>
 </section>
 
 <section>
-  <h2>Selected AI / Benchmark Projects</h2>
+  <h2>Selected Projects</h2>
   <div class="proj">
     <div class="proj-title">STEM Benchmark Development for LLM Evaluation <span>· Mercor / Turing</span></div>
     <ul>
       <li>Developed challenging mathematics and numerical-analysis tasks across 15+ benchmark projects, exposing model weaknesses in reasoning, derivation and numerical consistency.</li>
-      <li>Engineered discriminating test cases and operator redesigns (e.g. monotone Hermite interpolation, inequality-based estimators) to pass exact-match scoring.</li>
-      <li>Verified all numerical outputs and citations against source PDFs before producing copy-paste-ready deliverable files.</li>
     </ul>
   </div>
   <div class="proj">
-    <div class="proj-title">SciCode-Style Multi-Step Python Benchmarks</div>
+    <div class="proj-title">SciCode-Style Multi-Step Python Benchmarks <span>· GitHub-based delivery</span></div>
     <ul>
       <li>Built 25+ reproducible benchmark notebooks spanning FEM, phase-field fracture, poroelasticity and stochastic-flow problems from recent arXiv papers.</li>
       <li>Diagnosed harness artifacts versus genuine model failures and recalibrated evaluation pipelines for fair scoring.</li>
-      <li>Delivered complete, research-grade code with publication-quality numerical reasoning and documentation.</li>
+    </ul>
+  </div>
+  <div class="proj">
+    <div class="proj-title">Statistics of Monsoon Rainfall Extremes, 1951–2025 <span>· Atmosphere (2026)</span></div>
+    <ul>
+      <li>Analyzed 75 years of 0.25° IMD gridded daily rainfall in Python; fitted Brown–Resnick extremal-dependence models to F-madogram estimates and applied sliding-window trend and Pettitt change-point tests.</li>
     </ul>
   </div>
 </section>
@@ -167,7 +179,7 @@ ul li::marker{color:var(--accent);}
   <div class="edu">
     <div><span class="deg">Ph.D. in Applied Mathematics</span>, <span class="inst">Gautam Buddha University, Greater Noida</span><br>
       Thesis: <i>Diagnostic and Numerical Modeling Study of Heavy Precipitation Events over Indian Region</i> · Supervisor: Dr. Sushil Kumar · CGPA 8.29</div>
-    <div class="yr">2020 – 2026 (defended Jan 2026)</div>
+    <div class="yr">2020 – 2026</div>
   </div>
   <div class="edu">
     <div><span class="deg">M.Sc. in Mathematics</span>, <span class="inst">DAV College, Panjab University, Chandigarh</span></div>
@@ -182,20 +194,18 @@ ul li::marker{color:var(--accent);}
 <section>
   <h2>Selected Publications</h2>
   <ul class="pubs">
+    <li><b>Lohan, N.</b>, Kumar, S., Ben Hasher, F. F., &amp; Zhran, M. (2026). Reorganization of the spatial dependence structure of Indian summer monsoon rainfall extremes, 1951–2025. <i>Atmosphere</i>, 17(9), 892. <a class="doi" href="https://doi.org/10.3390/atmos17090892">doi:10.3390/atmos17090892</a></li>
     <li><b>Lohan, N.</b>, Pattanaik, D. R., Kumar, S., &amp; Giri, R. K. (2025). Diagnostic study of monsoon-linked rainfall events: Unraveling the role of monsoon low pressure systems across the Indian subcontinent. <i>Earth Systems and Environment.</i> <a class="doi" href="https://doi.org/10.1007/s41748-025-00706-y">doi:10.1007/s41748-025-00706-y</a></li>
     <li><b>Lohan, N.</b>, Routray, A., Kumar, R., Mahala, B. K., &amp; Kumar, S. (2025). Validation and diagnostic study of cloudburst events over the Himalayan region using IMDAA and ERA5. <i>Geomatics, Natural Hazards and Risk</i>, 16(1), 2446589. <a class="doi" href="https://doi.org/10.1080/19475705.2024.2446589">doi:10.1080/19475705.2024.2446589</a></li>
-    <li><b>Lohan, N.</b>, Kumar, S., Singh, V., Gupta, R. P., &amp; Tiwari, G. (2025). Analyzing an extreme rainfall event in Himachal Pradesh, India, to contribute to sustainable development. <i>Sustainability</i>, 17(5), 2115. <a class="doi" href="https://doi.org/10.3390/su17052115">doi:10.3390/su17052115</a></li>
   </ul>
-  <p class="more">Full list (7 journal articles, 3 conference papers / book chapters): <a href="https://scholar.google.com/citations?user=yQdDY5QAAAAJ&amp;hl=en">Google Scholar</a></p>
+  <p class="more">Full list (8 journal articles, 4 conference papers / book chapters): <a href="https://scholar.google.com/citations?user=yQdDY5QAAAAJ&amp;hl=en">Google Scholar</a></p>
 </section>
 
 <section>
-  <h2>Qualifications, Collaborations &amp; Training</h2>
+  <h2>Qualifications &amp; Training</h2>
   <ul>
-    <li><b>CSIR-UGC NET</b> (Mathematical Sciences), qualified 2019 and 2022 &nbsp;·&nbsp; <b>GATE Mathematics</b>, qualified 2022</li>
-    <li><b>Research collaborations</b> with IMD (Dr. R. K. Giri, Dr. D. R. Pattanaik), NCMRWF (Dr. Ashish Routray) and IITM Pune on HPC-based modeling and 3DVAR data assimilation</li>
-    <li><b>Training:</b> IMD-Pune Induction Training Program on Meteorology (2024); NIDM Disaster Risk Reduction Programme (2023) &nbsp;·&nbsp; <b>Presentations:</b> 2 oral (TROPMET 2023, ICAIM 2023), 1 poster (TROPMET 2022)</li>
-    <li><b>Languages:</b> Hindi (native), English (fluent)</li>
+    <li><b>CSIR-UGC NET</b> (Mathematical Sciences), qualified 2019 and 2022 &nbsp;·&nbsp; <b>GATE Mathematics</b>, qualified 2022 &nbsp;·&nbsp; <b>Languages:</b> Hindi (native), English (fluent)</li>
+    <li><b>Research collaborations</b> with IMD, NCMRWF and IITM Pune on HPC-based modeling and 3DVAR data assimilation &nbsp;·&nbsp; <b>Training:</b> IMD-Pune Induction Training Program on Meteorology (2024); NIDM Disaster Risk Reduction Programme (2023)</li>
   </ul>
 </section>
 
