@@ -27,21 +27,28 @@
 
   // Figure lightbox
   var zooms = document.querySelectorAll('a.zoom');
-  if (zooms.length && typeof HTMLDialogElement === 'function') {
-    var dlg = document.createElement('dialog');
+  var dlg, img, cap, openLink;
+  function buildLightbox() {
+    dlg = document.createElement('dialog');
     dlg.className = 'lightbox';
     dlg.setAttribute('aria-label', 'Enlarged figure');
     dlg.innerHTML =
       '<div class="lb-inner"><button class="lb-close" type="button" aria-label="Close">&times;</button>' +
       '<div class="lb-img"><img alt=""></div>' +
-      '<div class="lb-bar"><div class="lb-cap"></div><a class="lb-open" target="_blank" rel="noopener">Open full size</a></div></div>';
+      '<div class="lb-bar"><div class="lb-cap"></div><a class="lb-open" href="#" target="_blank" rel="noopener">Open full size</a></div></div>';
     document.body.appendChild(dlg);
-    var img = dlg.querySelector('img');
-    var cap = dlg.querySelector('.lb-cap');
-    var openLink = dlg.querySelector('.lb-open');
+    img = dlg.querySelector('img');
+    cap = dlg.querySelector('.lb-cap');
+    openLink = dlg.querySelector('.lb-open');
+    dlg.querySelector('.lb-close').addEventListener('click', function () { dlg.close(); });
+    dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); });
+    dlg.addEventListener('close', function () { img.removeAttribute('src'); });
+  }
+  if (zooms.length && typeof HTMLDialogElement === 'function') {
     zooms.forEach(function (a) {
       a.addEventListener('click', function (e) {
         e.preventDefault();
+        if (!dlg) buildLightbox();
         var fig = a.closest('figure');
         var fc = fig && fig.querySelector('figcaption');
         img.src = a.href;
@@ -51,9 +58,6 @@
         dlg.showModal();
       });
     });
-    dlg.querySelector('.lb-close').addEventListener('click', function () { dlg.close(); });
-    dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); });
-    dlg.addEventListener('close', function () { img.removeAttribute('src'); });
   }
 
   // Publication filters
